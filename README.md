@@ -1,0 +1,1 @@
+This is my final work. In this project, the following languages were used: HTML, CSS, JS. The mockup API service was also used. In which I have implemented a basic set of tools such as add, delete, modify and select(GET, POST, DELETE, PUT).
