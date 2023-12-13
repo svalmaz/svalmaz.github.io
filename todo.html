@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="styletodo.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="todo-header">
+            <h2 id="userGreeting">ToDo List</h2>
+            <button id="logoutButton" onclick="logout()">Log out</button>
+        </div>
+        <div class="task-input">
+            <input type="text" id="newTask" placeholder="New task">
+            <button onclick="addTask()">Add task</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('completed')">completed</button>
+            <button onclick="filterTasks('uncompleted')">uncompleted</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="todo-script.js"></script>
+</body>
+</html>

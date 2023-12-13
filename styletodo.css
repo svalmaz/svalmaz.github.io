@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/wall2.jpg'); /* Замените на путь к вашему фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    max-height: 90vh; 
+    overflow-y: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+#taskList {
+    max-height: 400px; /* Ограничение высоты списка задач */
+    overflow-y: auto; /* Включение вертикальной прокрутки */
+    margin: 0;
+    padding: 0;
+   /* Удаление стандартных маркеров списка */
+}
+#taskList li {
+    padding: 10px;
+    border-bottom: 1px solid #eee; /* Добавление границы между задачами */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 25%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoutButton {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutButton:hover {
+    background-color: #c9302c;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.filters button {
+    padding: 15px 15px;
+    width: 120px;
+    margin: 0 5px;
+    background-color: #6178a5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background-color: #61a563;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}

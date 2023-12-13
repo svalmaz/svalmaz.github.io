@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <button id="showLoginForm">Sign in</button>
+            <button id="showRegisterForm">Sign up</button>
+        </div>
+
+        <div id="loginForm" class="form">
+            <h2>Login</h2>
+        <input type="text" id="loginName" placeholder="Username" required>
+        <input type="password" id="loginPass" placeholder="Pass" required>
+        <button onclick="login()">Sign in</button>
+        <p id="loginError" style="color: red;"></p>
+        </div>
+
+        <div id="registerForm" class="form" style="display: none;">
+            <h2>Registration</h2>
+            <input type="text" id="registerName" placeholder="Username" required>
+            <input type="password" id="registerPass" placeholder="Pass" required>
+            <button onclick="register()">Sign up</button>
+        </div>
+
+        <p id="response"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
